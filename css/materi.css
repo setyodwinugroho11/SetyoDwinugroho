@@ -1,0 +1,152 @@
+:root {
+  --primary: red;
+  --bg: #010101;
+}
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  outline: none;
+  border: none;
+  text-decoration: none;
+}
+
+body {
+  font-family: "Poppins", sans-serif;
+  background-color: var(--bg);
+  color: #fff;
+  /* min-height: 3000px; */
+}
+
+/* Navbar */
+.navbar {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 1.4rem 7%;
+  background-color: rgb(1, 1, 1, 0.8);
+  border-bottom: 1px solid #634930;
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  z-index: 9999;
+}
+
+.navbar .navbar-logo {
+  font-size: 2rem;
+  font-weight: 700;
+  color: #fff;
+  font-style: italic;
+}
+
+.navbar .navbar-logo span {
+  color: var(--primary);
+}
+
+.navbar .navbar-nav a {
+  font-size: 1.1rem;
+  margin-left: 2rem;
+  color: #fff;
+  transition: color 0.3s ease;
+  display: inline-block;
+}
+
+.navbar .navbar-nav a:hover {
+  color: var(--primary);
+}
+
+.navbar .navbar-nav a::after {
+  content: "";
+  display: block;
+  padding-bottom: 0.5rem;
+  border-bottom: 0.1rem solid var(--primary);
+  transform: scaleX(0);
+}
+
+.navbar .navbar-nav a:hover::after {
+  transform: scaleX(1);
+  transition: 0.3s linear;
+}
+
+.navbar .navbar-extra a {
+  color: #fff;
+  margin: 0 0.5rem;
+}
+
+.navbar .navbar-extra a:hover {
+  color: var(--primary);
+}
+
+#menu {
+  display: none;
+}
+
+.about,
+.basisdata {
+  padding: 8rem 7% 1.4rem;
+}
+
+.about h2,
+.basisdata h2 {
+  text-align: center;
+  font-size: 2.6rem;
+  margin-bottom: 2.5rem;
+}
+
+.about h2 span,
+.basisdata h2 span {
+  color: var(--primary);
+}
+
+.about .row {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 2rem;
+  justify-content: center;
+  font-size: 1.4rem;
+}
+
+.about-img img {
+  width: 20rem;
+ height: 20rem;
+  object-fit: cover;
+  object-position: center;
+  border-radius: 50%;
+ padding: 1rem;
+  border: 0.2rem solid rgb(164, 6, 6);
+  margin-bottom: 2.5rem;
+}
+
+.about-img2 img {
+  width: 50%;
+ height: 50%;
+ padding: 0.8rem;
+  border: 0.2rem solid rgb(164, 6, 6);
+  margin-bottom: 2.5rem;
+}
+.about .row .content {
+  margin-bottom: 0.8rem;
+  font-size: 1.6rem;
+  font-weight: 100;
+  line-height: 1.6;
+}
+
+.atasan {
+  text-align: center;
+  padding: 2rem;
+  font-size: 1.6rem;
+  margin-top: 2.5rem;
+}
+
+.bawahan {
+  padding: 2rem;
+  font-size: 1.6rem;
+}
+
+.bawahan p {
+  padding: 0.1rem;
+  font-size: 1.4rem;
+  font-weight: 100;
+  line-height: 1.6;
+}
