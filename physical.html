@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="css/materi.css">
+</head>
+<body>
+    <nav class="navbar">
+      <a href="#"
+      class="navbar-logo">Physical <span>Model</span></a>
+
+      <div class="navbar-nav">
+        <a href="index.html">Home</a>
+      </div>
+    </nav>
+
+    <section class="hero" id="home">
+        <main class="content">
+        </main>
+    </section>
+    <section id="about" class="about">
+      <h2><span>Apa itu </span>Physical Model?</h2>
+
+      <div class="row">
+        <center>
+          <div class="about-img2">
+          <img src="Pyhsical.jpg"
+             alt="Setyo Dwinugroho" />
+             <p align="justify">"Physical Model adalah representasi paling detail dari basis data yang menggambarkan bagaimana data benar-benar disimpan di dalam sistem penyimpanan (storage) komputer. Model ini fokus pada aspek teknis implementasi, seperti struktur tabel, indeks, tipe data, partisi, relasi antar tabel, serta mekanisme akses data.
+
+Kalau Conceptual Model menggambarkan apa saja yang ada (entitas, atribut, relasi), dan Logical Model menjelaskan bagaimana hubungan data disusun secara logis, maka Physical Model menjelaskan bagaimana data tersebut diimplementasikan dalam DBMS tertentu."</p>
+        </div>
+      </center>
+       
+
+      </div>
+        
+        
+    <Section>
+
+      <section id="bawahan" class="bawahan">
+    <ol>
+     <li>
+        <h4>Ciri-ciri Physical Model</h4>
+        <ul>
+        <li>Sangat teknis → menyesuaikan dengan DBMS yang digunakan (misalnya MySQL, Oracle, PostgreSQL).</li>
+        <li>Mendefinisikan detail struktur penyimpanan → tabel, kolom, tipe data, primary key, foreign key.</li>
+        <li>Menjelaskan optimasi kinerja → penggunaan indeks, clustering, partisi data.</li>
+        <li>Menjadi acuan implementasi → inilah model yang benar-benar diterjemahkan menjadi perintah SQL (DDL).</li>
+        </ul>
+     </li>
+      <li>
+          <h4>Komponen Utama Physical Model</h4>
+          <ul>
+        <li>Tabel dan Kolom → lengkap dengan nama dan tipe data (contoh: VARCHAR(50), INT).</li>
+        <li>Kunci (Key) → Primary Key, Foreign Key, Unique Key.</li>
+        <li>Indeks → untuk mempercepat pencarian data.</li>
+        <li>Constraint → aturan seperti NOT NULL, CHECK, DEFAULT.</li>
+        <li>Storage Details → kadang termasuk cara data dipartisi atau ditempatkan dalam disk.</li>
+        </ul>
+      </li>
+      <li>
+          <h4>Contoh singkat</h4>
+          <p>Dalam sistem kampus</p>
+          <ul>
+        <li>Entitas: Mahasiswa, Dosen, Mata Kuliah.</li>
+        <li>Atribut: Mahasiswa punya NIM, Nama; Dosen punya NIP.</li>
+        <li>Relasi: Mahasiswa mengambil Mata Kuliah, Dosen mengajar Mata Kuliah.</li>
+        </ul>
+      </li>
+     
+    </ol>
+    </section>
+      
+</body>
+</html>

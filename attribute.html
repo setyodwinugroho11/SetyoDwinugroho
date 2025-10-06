@@ -1,0 +1,203 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="css/materi.css">
+</head>
+<body>
+    <nav class="navbar">
+      <a href="#"
+      class="navbar-logo">attribute, entitas & <span>Relasi</span></a>
+
+      <div class="navbar-nav">
+        <a href="index.html">Home</a>
+      </div>
+    </nav>
+
+    <section class="hero" id="home">
+        <main class="content">
+        </main>
+    </section>
+    <section id="about" class="about">
+      <h2><span> Apa itu attribute, entitas dan relasi </span>dalam ERD.</h2>
+
+      <div class="row">
+        <center>
+          <div class="about-img">
+          <img src="14.jpg"
+             alt="Setyo Dwinugroho" />
+             <h3>A. attribute</h3>
+             <p align="justify">"Atribut adalah ciri-ciri atau informasi yang menjelaskan suatu entitas.
+Dalam database, atribut menjadi kolom/field dari tabel entitas tersebut."</p>
+        </div>
+      </center>
+       
+
+      </div>
+        
+        
+    <Section>
+
+      <section id="bawahan" class="bawahan">
+        
+    <ol>
+      <li>
+          <h4>Jenis-jenis atribut:</h4>
+          <ul>
+        <li>Atribut kunci (Key Attribute) → atribut yang unik, digunakan sebagai primary key.
+Contoh: NIM untuk Mahasiswa.</li>
+        <li>Atribut sederhana (Simple Attribute) → tidak bisa dipecah lagi.
+Contoh: Nama.</li>
+        <li>Atribut komposit (Composite Attribute) → bisa dipecah menjadi bagian lebih kecil.
+Contoh: NamaLengkap → terdiri dari NamaDepan dan NamaBelakang.</li>
+        <li>Atribut multivalued (Multivalued Attribute) → dapat memiliki lebih dari satu nilai.
+Contoh: NoTelepon (bisa lebih dari satu).</li>
+        <li>Atribut turunan (Derived Attribute) → nilai diperoleh dari atribut lain.
+Contoh: Umur bisa diturunkan dari TanggalLahir.</li>
+        </ul>
+      </li>
+      <li>
+          <h5>Contoh singkat</h5>
+          
+          <ul>
+        <li>Entitas Mahasiswa → Atribut: NIM, Nama, Alamat, TanggalLahir.</li>
+        </ul>
+      </li>
+     
+    </ol>
+
+      <div class="row">
+        <center>
+             <h3>B. Entitas</h3>
+             <p align="justify">"Entitas adalah objek nyata atau konsep yang datanya ingin disimpan dalam basis data.
+Entitas bisa berupa orang, tempat, benda, peristiwa, atau konsep yang dapat dibedakan dari yang lain."</p>
+        </div>
+      </center>
+       
+
+      </div>
+        
+        
+    <Section>
+
+      <section id="bawahan" class="bawahan">
+        
+    <ol>
+      <li>
+          <h4>Ciri-ciri entitas</h4>
+          <ul>
+        <li>Memiliki nama unik.</li>
+        <li>Mewakili tabel dalam database</li>
+        <li>Biasanya ditulis sebagai kata benda.</li>
+        </ul>
+      </li>
+      <li>
+          <h5>Contoh singkat</h5>
+          <p>Dalam sistem perpustakaan & Sistem Akademik</p>
+          <ul>
+        <li>Entitas: Anggota, Buku, Peminjaman</li>
+        <li>Entitas: Mahasiswa, Dosen, MataKuliah.</li>
+        </ul>
+      </li>
+     
+    </ol>
+      <div class="row">
+        <center>
+             <h3>B. Entitas</h3>
+             <p align="justify">"Entitas adalah objek nyata atau konsep yang datanya ingin disimpan dalam basis data.
+Entitas bisa berupa orang, tempat, benda, peristiwa, atau konsep yang dapat dibedakan dari yang lain."</p>
+        </div>
+      </center>
+       
+
+      </div>
+        
+        
+    <Section>
+
+      <section id="bawahan" class="bawahan">
+        
+    <ol>
+      <li>
+          <h4>Ciri-ciri entitas</h4>
+          <ul>
+        <li>Memiliki nama unik.</li>
+        <li>Mewakili tabel dalam database</li>
+        <li>Biasanya ditulis sebagai kata benda.</li>
+        </ul>
+      </li>
+      <li>
+          <h5>Contoh singkat</h5>
+          <p>Dalam sistem perpustakaan & Sistem Akademik</p>
+          <ul>
+        <li>Entitas: Anggota, Buku, Peminjaman</li>
+        <li>Entitas: Mahasiswa, Dosen, MataKuliah.</li>
+        </ul>
+      </li>
+     
+    </ol>
+      <div class="row">
+        <center>
+             <h3>C. Relasi</h3>
+             <p align="justify">"Relasi adalah hubungan antara dua atau lebih entitas.
+Dalam database, relasi biasanya direpresentasikan sebagai tabel penghubung atau dengan foreign key."</p>
+        </div>
+      </center>
+       
+
+      </div>
+        
+        
+    <Section>
+
+      <section id="bawahan" class="bawahan">
+        
+    <ol>
+      <li>
+          <h4>Jenis-jenis relasi:</h4>
+          <ul>
+        <li>One to One (1 : 1):
+Satu entitas berhubungan dengan satu entitas lainnya.
+Contoh: 1 Mahasiswa punya 1 Kartu Mahasiswa..</li>
+        <li>One to Many (1 : N):
+Satu entitas berhubungan dengan banyak entitas lain.
+Contoh: 1 Dosen mengajar banyak Mata Kuliah</li>
+        <li>Many to Many (M : N):
+Banyak entitas berhubungan dengan banyak entitas lainnya.
+Contoh: Banyak Mahasiswa mengambil banyak Mata Kuliah.</li>
+        </ul>
+      </li>
+      <li>
+          <h5>Contoh ERD Sederhana</h5>
+          <p>Misalkan sistem Perpustakaan:</p>
+          <ul>
+        <li>Entitas: Anggota, Buku, Peminjaman</li>
+        </ul>
+          <p>Attribute:</p>
+          <ul>
+        <li>Anggota → ID_Anggota (PK), Nama, Alamat</li>
+        <li>Buku → ID_Buku (PK), Judul, Pengarang</li>
+        <li>Peminjaman → ID_Pinjam (PK), TanggalPinjam, TanggalKembali</li>
+        </ul>
+        </ul>
+          <p>Relasi:</p>
+          <ul>
+        <li>Anggota melakukan Peminjaman</li>
+        <li>Buku dipinjam dalam Peminjaman</li>
+        </ul>
+        </ul>
+          <p>Jadi singkatnya:</p>
+          <ul>
+        <li>Entitas = Objek utama yang datanya ingin disimpan.</li>
+        <li>Atribut = Informasi/detail dari entitas tersebut.</li>
+        <li>Relasi = Hubungan antar entitas.</li>
+        </ul>
+      </li>
+     
+    </ol>
+    </section>
+      
+</body>
+</html>
