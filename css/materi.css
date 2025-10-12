@@ -151,7 +151,18 @@ body {
   line-height: 1.6;
 }
 
+.bawahan h4 {
+  margin-top: 1rem;
+  margin-bottom: 1rem;
+}
+
+.bawahan .workbench li{
+  margin-top: 0.7rem;
+  margin-bottom: 0.7rem;
+}
+
 .row h3{
   margin-bottom: 2rem;
   margin-top: 1.5rem;
 }
+

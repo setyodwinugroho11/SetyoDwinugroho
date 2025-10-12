@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="css/materi.css">
+</head>
+<body>
+    <nav class="navbar">
+      <a href="#"
+      class="navbar-logo">Relation ERD <span>& Many-to-Many</span></a>
+
+      <div class="navbar-nav">
+        <a href="index.html">Home</a>
+      </div>
+    </nav>
+
+    <section class="hero" id="home">
+        <main class="content">
+        </main>
+    </section>
+    <section id="about" class="about">
+      <h2><span>Apa itu relation pada ERD? </span>Mengapa many-to-many tidak baik digunakan pada ERD?</h2>
+
+      <div class="row">
+        <center>
+          <div class="about-img">
+          <img src="Relation ERD.jpg"
+             alt="Setyo Dwinugroho" />
+             <h3>Apa Itu Relasi (Relation) pada ERD?</h3>
+             <p align="justify">Relasi pada ERD menggambarkan hubungan antara dua entitas. Terdapat beberapa jenis relasi yang umum digunakan dalam ERD, termasuk:
+             </p>
+          </div>
+        </center>
+        <ol>
+        <li>One to One (1:1): Satu entitas dari jenis satu hanya terhubung dengan satu entitas dari jenis lainnya, dan sebaliknya.</li>
+        <li>One to Many (1:N): Satu entitas dari jenis satu terhubung dengan banyak entitas dari jenis lainnya, tetapi sebaliknya tidak terjadi.</li>
+        <li>Many to One (N:1): Banyak entitas dari jenis satu terhubung ke satu entitas dari jenis lainnya, tetapi sebaliknya tidak terjadi.</li>
+        <li>Many to Many (N:N): Banyak entitas dari jenis satu dapat terhubung dengan banyak entitas dari jenis lainnya, dan sebaliknya.</li>
+        </ol>
+        
+    <Section>
+
+      <section id="bawahan" class="bawahan">
+        <center>
+             <h3>Mengapa Many to Many Tidak Selalu Baik Digunakan dalam ERD?</h3>
+        </center>
+          <p>Walaupun Many to Many adalah jenis relasi yang mungkin muncul dalam kehidupan nyata, penggunaannya dalam ERD dapat menimbulkan beberapa masalah. Berikut beberapa alasan mengapa penggunaan relasi Many to Many tidak selalu dianjurkan:</p>
+
+          <h4>1. Kompleksitas:</h4>
+          <p>Relasi Many to Many dapat menghasilkan desain database yang kompleks. Dalam praktiknya, implementasi hubungan banyak-ke-banyak sering melibatkan tabel penghubung (junction table) yang memerlukan pemodelan tambahan. Ini bisa mempersulit desain database.</p>
+          
+          <h4>2. Kehilangan Data:</h4>
+          <p>Relasi Many to Many dapat menyebabkan kehilangan data. Misalnya, jika Anda menghapus satu sisi relasi, informasi tentang hubungan antara entitas tersebut dapat hilang, kecuali Anda mengambil tindakan tambahan.</p>
+          
+          <h4>3. Kinerja:</h4>
+          <p>Queries yang melibatkan relasi Many to Many dapat menjadi lambat. Dalam kasus hubungan banyak-ke-banyak, penggabungan tabel penghubung dan banyak baris data bisa memperlambat kinerja query.</p>
+          
+          <h4>4. Ketidakjelasan:</h4>
+          <p>Dalam beberapa kasus, relasi Many to Many mungkin tidak mewakili hubungan yang jelas antara entitas. Hal ini dapat menyebabkan kebingungan dan kesulitan dalam pemahaman struktur database.</p>
+         
+        <center>
+             <h3>Alternatif untuk Relasi Many to Many:</h3>
+        </center>
+          <p>Sebagai alternatif, dalam desain database, Anda dapat mempertimbangkan penggunaan relasi One to Many (1:N) dengan tabel penghubung (junction table) untuk menggambarkan hubungan banyak-ke-banyak. Hal ini dapat mengatasi beberapa masalah kompleksitas, kinerja, dan ketidakjelasan yang terkait dengan Many to Many.
+
+Dalam desain ERD, pemahaman tentang jenis-jenis relasi dan pertimbangan yang sesuai dapat membantu Anda merancang database yang efisien, mudah dimengerti, dan menghindari masalah yang dapat muncul akibat penggunaan relasi Many to Many yang berlebihan.
+
+Semoga artikel ini membantu Anda memahami konsep relasi dalam ERD dan mengapa Many to Many tidak selalu dianjurkan.</p>
+ 
+        
+    </section>
+      
+</body>
+</html>

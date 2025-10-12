@@ -1,0 +1,161 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="css/materi.css">
+</head>
+<body>
+    <nav class="navbar">
+      <a href="#"
+      class="navbar-logo">PrimaryKey, ForegentKey & <span>CandidateKey</span></a>
+
+      <div class="navbar-nav">
+        <a href="index.html">Home</a>
+      </div>
+    </nav>
+
+    <section class="hero" id="home">
+        <main class="content">
+        </main>
+    </section>
+    <section id="about" class="about">
+      <h2><span>Pengertian & Contoh </span>PrimaryKey, ForegentKey & CandidateKey</h2>
+
+      <div class="row">
+        <center>
+          <div class="about-img2">
+          <img src="Jenis-jeniskey.jpg"
+             alt="Setyo Dwinugroho" />
+             <h3>Apa Fungsi Key?</h3>
+             <p align="justify">"Key dalam ERD berfungsi untuk memberikan identifikasi pada setiap baris data dalam sebuah tabel dan sebagai penghubung antara satu tabel dan juga dengan tabel lainnya. Key juga sangat penting sebagai tanda pengenal dan penghubung antar tabel dalam suatu relational database. Key dapat dipahami sebagai ‘tanda pengenal’ untuk mengidentifikasi sebuah baris di dalam tabel. Key juga berperan penting sebagai penghubung antara satu tabel dan juga dengan tabel lainnya. Key dalam database juga berfungsi untuk menjalankan fungsi sebagai ‘tanda pengenal’ dan sebagai penghubung antar tabel."</p>
+        </div>
+      </center>
+        
+    <Section>
+
+      <section id="bawahan" class="bawahan">
+        <center>
+             <h3>1. PrimaryKey</h3>
+        </center>
+          <h4>A. Pengertian PrimaryKey</h4>
+          <p>Primary Key adalah atribut atau kumpulan atribut yang digunakan untuk mengidentifikasi setiap baris data dalam sebuah tabel secara unik. Primary Key dipilih karena keunikan, sehingga dapat dibedakan dengan baris data yang lain. Primary Key berfungsi sebagai tanda pengenal dan penghubung antar tabel dalam suatu relational database. Primary Key juga sangat penting dalam proses pencarian data dan memastikan integritas antar data pada tabel.</p>
+
+          <h4>B. Peran dan Pentingnya Primary Key</h4>
+          <p>Peran dan pentingnya Primary Key dalam ERD antara lain:</p>
+           <ul>
+        <li>Memberikan identifikasi pada setiap baris data dalam sebuah tabel.</li>
+        <li>Menjadi penghubung antara satu tabel dan juga dengan tabel lainnya.</li>
+        <li>Memastikan setiap baris data dalam tabel bersifat unik atau berbeda antara baris satu dengan baris lain.</li>
+        <li>Memudahkan dalam pengolahan data dan proses pencarian data.</li>
+        <li>Menjaga integritas antar data pada tabel.</li>
+        <li>Mencegah terjadinya duplikasi data.</li>
+        <li>Membantu melakukan pencarian dengan waktu yang cepat.</li>
+        </ul>
+        
+        <div class="workbench">
+        <h4>C. Contoh Penerapan Primary Key dalam ERD</h4>
+        <ul>
+          <li>Tabel Mahasiswa</li>
+          <img src="Tabel Mahasiswa.png" alt="Tabel Mahasiswa">
+          <p>nim sebagai Primary Key → memastikan tiap mahasiswa unik.</p>
+          <li>Tabel Produk</li>
+          <img src="Tabel Produk.png" alt="Tabel Produk">
+          <p>id_produk dibuat auto_increment agar otomatis unik.</p>
+          <li>Tabel Pegawai</li>
+          <img src="Tabel Pegawai.png" alt="Tabel Pegawai">
+          <p>nip adalah nomor unik tiap pegawai.</p>
+          <li>Tabel Buku</li>
+          <img src="Tabel Buku.png" alt="Tabel Buku">
+          <p>isbn sebagai identitas unik buku.</p>
+          <li>Tabel Kendaraan</li>
+          <img src="Tabel Kendaraan.png" alt="Tabel Kendaraan">
+          <p>plat_nomor unik untuk setiap kendaraan.</p>
+        </ul>
+        </div>
+
+        <center>
+             <h3>2. ForegentKey</h3>
+        </center>
+          <h4>A. Pengertian ForeignKey</h4>
+          <p>Foreign Key adalah atribut atau kumpulan atribut yang digunakan untuk menghubungkan antara tabel master dengan tabel turunannya. Foreign Key digunakan untuk menciptakan hubungan antara dua tabel dalam database relasional. Foreign Key juga dikenal sebagai kunci tamu karena merupakan kunci yang terdapat pada tabel kedua atau child. Foreign Key merujuk pada suatu kolom yang unik untuk menghubungkan antar tabel.</p>
+
+          <h4>B. Peran dan Pentingnya ForeignKey</h4>
+          <p>Peran dan pentingnya ForeignKey dalam ERD antara lain:</p>
+           <ul>
+        <li>Menghubungkan antara tabel master dengan tabel turunannya.</li>
+        <li>Menciptakan hubungan antara dua tabel dalam database relasional.</li>
+        <li>Memastikan integritas referensial antar tabel.</li>
+        <li>Memudahkan dalam pengolahan data dan proses pencarian data.</li>
+        <li>Menjaga integritas antar data pada tabel.</li>
+        <li>Menjaga integritas antar data pada tabel.</li>
+        <li>Mencegah terjadinya duplikasi data.</li>
+        </ul>
+        
+        <div class="workbench">
+        <h4>C. Contoh Penerapan ForeignKey dalam ERD</h4>
+          <ul>
+          <li>Dari Mahasiswa.kode_jurusan → ke Jurusan.kode_jurusan</li>
+          <img src="Foreign Mahasiswa.png" alt="Tabel Mahasiswa">
+          <p>1 jurusan memiliki banyak mahasiswa, tapi setiap mahasiswa hanya bisa masuk ke 1 jurusan.</p>
+          <li>Dari Transaksi.id_produk → ke Produk.id_produk</li>
+          <img src="Foreign Produk.png" alt="Tabel Produk">
+          <p>1 produk dapat muncul di banyak transaksi, tapi 1 transaksi hanya mengacu ke 1 produk.</p>
+          <li>Dari Pegawai.id_dept → ke Departemen.id_dept</li>
+          <img src="Foreign Pegawai.png" alt="Tabel Pegawai">
+          <p>1 departemen punya banyak pegawai, setiap pegawai terhubung ke satu departemen.</p>
+          <li>Dari Buku.id_penerbit → ke Penerbit.id_penerbit</li>
+          <img src="Foreign Buku.png" alt="Tabel Buku">
+          <p>1 penerbit bisa menerbitkan banyak buku, tapi 1 buku hanya punya 1 penerbit.</p>
+          <li>Dari Kendaraan.id_pemilik → ke Pemilik.id_pemilik</li>
+          <img src="Foreign Kendaraan.png" alt="Tabel Kendaraan">
+          <p>1 pemilik bisa memiliki banyak kendaraan, tapi 1 kendaraan hanya dimiliki oleh 1 pemilik.</p>
+        </ul>
+        </div>
+
+        <center>
+             <h3>3. CandidatKey</h3>
+        </center>
+          <h4>A. Pengertian CandidatKey</h4>
+          <p>Candidate Key adalah kumpulan atribut yang dapat membedakan setiap baris data dalam sebuah relasi secara unik. Candidate Key juga dikenal sebagai kunci calon karena merupakan kunci yang memenuhi syarat untuk menjadi Primary Key. Candidate Key berfungsi sebagai tanda pengenal dan penghubung antar tabel dalam suatu relational database.</p>
+
+          <h4>B. Peran dan Pentingnya CandidateKey</h4>
+          <p>Peran dan pentingnya CandidatKey dalam ERD antara lain:</p>
+           <ul>
+        <li>Memberikan identifikasi pada setiap baris data dalam sebuah tabel.</li>
+        <li>Menjadi kandidat untuk menjadi Primary Key pada tabel.</li>
+        <li>Memastikan setiap baris data dalam tabel bersifat unik atau berbeda antara baris satu dengan baris lain.</li>
+        <li>Memudahkan dalam pengolahan data dan proses pencarian data.</li>
+        <li>Menjaga integritas antar data pada tabel.</li>
+        <li>Mencegah terjadinya duplikasi data.</li>
+        </ul>
+
+        <div class="workbench">
+        <h4>C. Contoh Penerapan CandidateKey dalam ERD</h4>
+          <ul>
+          <li>Contoh 1 – Mahasiswa</li>
+          <img src="Candidate Mahasiswa.png" alt="Tabel Mahasiswa">
+          <p>Calon candidate key: nim (dipilih jadi PK), email (unik tapi tidak dipilih)</p>
+          <li>Contoh 2 – Produk</li>
+          <img src="Candidate Produk.png" alt="Tabel Produk">
+          <p>Calon candidate key: id_produk (PK), kode_produk (unik)</p>
+          <li>Contoh 3 – Pegawai</li>
+          <img src="Candidate Pegawai.png" alt="Tabel Pegawai">
+          <p>Calon candidate key:nip (PK), no_ktp (unik)</p>
+          <li>Contoh 4 – Buku</li>
+          <img src="Candidate Buku.png" alt="Tabel Buku">
+          <p>Calon candidate key:isbn (PK), kode_buku (unik)</p>
+          <li>Contoh 5 – Pelanggan</li>
+          <img src="Candidate Pelanggan.png" alt="Tabel Kendaraan">
+          <p>Calon candidate key:id_pelanggan (PK), no_hp (unik), email (unik)</p>
+        </ul>
+        </div>
+
+          
+
+  
+    </section>
+      
+</body>
+</html>
