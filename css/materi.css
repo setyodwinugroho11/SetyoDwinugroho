@@ -109,19 +109,19 @@ body {
 
 .about-img img {
   width: 20rem;
- height: 20rem;
+  height: 20rem;
   object-fit: cover;
   object-position: center;
   border-radius: 50%;
- padding: 1rem;
+  padding: 1rem;
   border: 0.2rem solid rgb(164, 6, 6);
   margin-bottom: 2.5rem;
 }
 
 .about-img2 img {
   width: 50%;
- height: 50%;
- padding: 0.8rem;
+  height: 50%;
+  padding: 0.8rem;
   border: 0.2rem solid rgb(164, 6, 6);
   margin-bottom: 2.5rem;
 }
@@ -149,6 +149,14 @@ body {
   font-size: 1.4rem;
   font-weight: 100;
   line-height: 1.6;
+}
+
+.bawahan ol {
+  padding : 1rem;
+  margin-top: 0.5rem;
+  margin-bottom: 0.5rem;
+  line-height: 1.6;
+  font-weight: 100;
 }
 
 .bawahan h4 {
